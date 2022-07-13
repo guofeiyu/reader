@@ -1,12 +1,12 @@
 reader:
   app:
-    storagePath: storage
+    storagePath: 'storage'
     showUI: false
     debug: false
     packaged: false
-    secure: false
-    inviteCode: ""
-    secureKey: ""
+    secure: true
+    inviteCode: "w0SIOhQxvys1gpm9"
+    secureKey: "w0SIOhQxvys1gpm9"
     proxy: false
     proxyType: "HTTP"
     proxyHost: ""
