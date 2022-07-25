@@ -9,8 +9,8 @@ reader:
     debug: false
     packaged: false
     secure: true
-    inviteCode: "w0SIOhQxvys1gpm9"
-    secureKey: "w0SIOhQxvys1gpm9"
+    inviteCode: ""
+    secureKey: ""
     proxy: false
     proxyType: "HTTP"
     proxyHost: ""
@@ -22,7 +22,7 @@ reader:
     userBookLimit: 200
     debugLog: false
     autoClearInactiveUser: 0
-    mongoUri: "mongodb://mongo:HIBkWSVDVvLlfTp7dGME@containers-us-west-86.railway.app:7104"
+    mongoUri: ""
     mongoDbName: "reader"
 
   server:
