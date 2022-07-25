@@ -50,7 +50,8 @@ data class Book(
        var originOrder: Int = 0,                   //书源排序
         var useReplaceRule: Boolean = true,         // 正文使用净化替换规则
         var variable: String? = null,                // 自定义书籍变量信息(用于书源规则检索书籍信息)
-        var readConfig: ReadConfig? = null
+        var readConfig: ReadConfig? = null,
+        var isInShelf: Boolean = false               // 是否加入到书架
     ) : BaseBook {
 
     fun isLocalBook(): Boolean {
@@ -280,8 +281,8 @@ data class Book(
             if (!rootPath.endsWith(File.separator)) {
                 rootPath = rootPath + File.separator
             }
-            book.bookUrl = book.bookUrl.replace(Regex("^${rootPath}"), "")
-            book.originName = book.originName.replace(Regex("^${rootPath}"), "")
+            book.bookUrl = book.bookUrl.replaceFirst(rootPath, "")
+            book.originName = book.originName.replaceFirst(rootPath, "")
             book.setRootDir(rootDir)
             book.updateFromLocal()
             return book
