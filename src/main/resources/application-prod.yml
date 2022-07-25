@@ -22,7 +22,7 @@ reader:
     userBookLimit: 200
     debugLog: false
     autoClearInactiveUser: 0
-    mongoUri: ""
+    mongoUri: "mongodb://mongo:HIBkWSVDVvLlfTp7dGME@containers-us-west-86.railway.app:7104"
     mongoDbName: "reader"
 
   server:
