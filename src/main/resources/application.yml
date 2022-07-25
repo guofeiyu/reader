@@ -4,9 +4,9 @@ reader:
     showUI: false
     debug: false
     packaged: false
-    secure: true
-    inviteCode: "w0SIOhQxvys1gpm9"
-    secureKey: "w0SIOhQxvys1gpm9"
+    secure: false
+    inviteCode: ""
+    secureKey: ""
     proxy: false
     proxyType: "HTTP"
     proxyHost: ""
